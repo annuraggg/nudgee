@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Alegreya";
+  src: url("../public/fonts/Alegreya/Alegreya-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../public/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Cormorant_SC";
+  src: url("../public/fonts/Cormorant_SC/CormorantSC-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Patrick_Hand_SC";
+  src: url("../public/fonts/Patrick_Hand_SC/PatrickHandSC-Regular.ttf");
+}
+
+.font-alegreya {
+  font-family: "Alegreya", serif;
+}
+
+.font-comfortaa {
+  font-family: "Comfortaa", cursive;
+}
+
+.font-cormorant {
+  font-family: "Cormorant_SC", serif;
+}
+
+.font-patrick {
+  font-family: "Patrick_Hand_SC", cursive;
+}
