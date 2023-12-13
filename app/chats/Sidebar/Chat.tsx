@@ -7,7 +7,7 @@ import ChatContextMenu from "./ChatContextMenu";
 import { useRouter } from "next/navigation";
 
 const ChatBox = ({ chat, user }: { chat: Chat; user: User }) => {
-  const { prefetch } = useRouter();
+  const { push } = useRouter();
   function convertFirebaseTimestamp(firebaseTimestamp: Timestamp) {
     const millisecondsPerDay = 24 * 60 * 60 * 1000;
     const currentTimestamp = new Date().getTime();
@@ -48,7 +48,7 @@ const ChatBox = ({ chat, user }: { chat: Chat; user: User }) => {
 
   const openChat = () => {
     console.log("CHAT OPENED " + chat?.id);
-    prefetch(`/chats/${chat?.id}`);
+    push(`/chats/${chat?.id}`);
   };
 
   return (
